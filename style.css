@@ -1,0 +1,370 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: visible;
+    /*Optional: hides the horizontal scrollbar if there is any */
+}
+
+body:before {
+    content: "";
+    z-index: -5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./background/image_4_.png") center/cover no-repeat;
+    /*Use background shorthand for better control */
+    opacity: 0.2;
+} 
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+    display: flex;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+
+/* css for manuel slide navigation */
+
+.navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #cc78de;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.margin-btn:hover {
+    background: #cc78de;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+#radio5:checked~.first {
+    margin-left: -80%;
+}
+
+#radio6:checked~.first {
+    margin-left: -100%;
+}
+
+
+/*css for automatic navigation*/
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div {
+    border: 2px solid #cc78de;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #cc78de;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #cc78de;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #cc78de;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #cc78de;
+}
+
+#radio5:checked~.navigation-auto .auto-btn5 {
+    background: #cc78de;
+}
+
+#radio6:checked~.navigation-auto .auto-btn6 {
+    background: #cc78de;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#1,
+#2,
+#3,
+#4,
+#5,
+#6{
+    height: 700px;
+}
+
+#1{
+    background-color: #8c8b88;
+    
+    border-radius: 8px;
+}
+#2{
+    background-color: #6d1cd6;
+    
+    border-radius: 8px;
+}
+#3{
+    background-color: #f29e50;
+    
+    border-radius: 8px;
+}
+#4{
+    background-color: #854d19;
+    
+    border-radius: 8px;
+}
+#5{
+    background-color: #9965ba;
+    border-radius: 8px;
+}
+#6{
+    background-color: #000000;
+    
+    border-radius: 8px;
+}
+
+.button1{
+    background: url("./button-bg/image_5_.png") no-repeat scroll 0 0 transparent;
+    width: 11%;
+    height: 20vh;
+    border-radius: 30px;
+    font-size: 200%;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+.button2{
+    background: url("./button-bg/image_6_.png") no-repeat scroll 0 0 transparent;
+    width: 11%;
+    height: 20vh;
+    border-radius: 30px;
+    font-size: 200%;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+.button3{
+    background: url("./button-bg/image_7_.png") no-repeat scroll 0 0 transparent;
+    width: 11%;
+    height: 20vh;
+    border-radius: 30px;
+    font-size: 200%;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+.button4{
+    background: url("./button-bg/image_7_.png") no-repeat bottom right;
+    width: 11%;
+    height: 20vh;
+    border-radius: 30px;
+    font-size: 200%;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+.button5{
+    background: url("./button-bg/image_9_.png") no-repeat bottom left;
+    width: 11%;
+    height: 20vh;
+    border-radius: 30px;
+    font-size: 200%;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+.button6{
+    background: url("./button-bg/image_11_.png") no-repeat top right;
+    width: 11%;
+    height: 20vh;
+    color: white;
+    border-radius: 30px;
+    font-size: 200%;
+    font-family: sans-serif;
+    opacity: 0.7;
+}
+
+.guitar-image{
+    width: 380px;
+    height: 750px;
+    border-radius: 15px;
+}
+.guitar-image3{
+    width: 450px;
+    height: 750px;
+    border-radius: 15px;
+}
+
+.guitar-image1x1{
+    width: 432px;
+    height: 432px;
+    border-radius: 15px;
+}
+
+
+.container h1{
+  color: #000000;
+  text-align: center;
+  
+}
+
+details{
+  background-color: #A06CD5;
+  color: #fff;
+  font-size: 1.5rem;
+  max-width: 80%;
+  text-align: left;
+  
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+  max-width: 80%;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+  max-width: 80%;
+}
+
+summary:after{
+  content: "\002B";
+  max-width: 80%;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+    max-width: 80%;
+    
+}
+
+details[open] summary:after{
+    content: "\00D7";
+    max-width: 80%;
+}
+
+details[open] div{
+  padding: .5em 1em;
+  max-width: 80%;
+  animation: expand 0.3s ease-in-out forwards;
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 300px;
+    opacity: 1;
+  }
+}
+
+
+
+.scrollToTopBtn {
+  
+  position: fixed;
+     bottom: 8vh;
+     right: 8vh;
+     font-size: 4vh;
+     width: 8vh;
+     height: 8vh;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     background-image: url(./4196777.png);
+     padding: 0px;
+     border-radius: 32px;
+     background-size: cover;
+     background-color: rgba(149, 94, 238, 0.373);
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0.1;
+  /* also add a translate effect */
+  transform: translateY(500px);
+  /* and a transition */
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.sidebar{
+    top: 0cm;
+    right: 0cm;
+}
+
+.logo{
+    height: 18vh;
+    opacity: 1;
+    color: #6d1cd6;
+}
